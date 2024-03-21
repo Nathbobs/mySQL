@@ -1,0 +1,7 @@
+#CREATING TABLES:
+
+### Most used datatypes;
+INT
+DECIMAL(M,N) #"M is the total number of digits and N is the number of digits after the decimal point" 
+#DECIMAL(5,2) = 123.45 (5 digits in total, 2 after the decimal point)
+VARCHAR(1) *

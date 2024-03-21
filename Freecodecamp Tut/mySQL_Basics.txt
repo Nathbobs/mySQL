@@ -4,4 +4,23 @@
 INT
 DECIMAL(M,N) #"M is the total number of digits and N is the number of digits after the decimal point" 
 #DECIMAL(5,2) = 123.45 (5 digits in total, 2 after the decimal point)
-VARCHAR(1) *
+VARCHAR(1) *This will store a string of text with a maximum length of 1 character (100) means max lenght 100)
+BLOB *This will store a large binary object (like an image or a sound file)("Binary Large Object")
+DATE *This will store a date 'YYYY-MM-DD'
+TIMESTAMP *This will store a date and time 'YYYY-MM-DD HH:MM:SS'
+
+ --sets student_id to the pry key of the database
+ --"this is used to create a table"
+-------------------------------------------------------
+ CREATE TABLE student (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(20),
+    major VARCHAR(20)
+); 
+
+DESCRIBE student;
+
+-- "DROP TABLE" student is used to drop tables;
+-- "Modifying the table;"
+ALTER TABLE student ADD gpa DECIMAL(3,2);
+--------------------------------------------------------

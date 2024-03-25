@@ -24,3 +24,19 @@ DESCRIBE student;
 -- "Modifying the table;"
 ALTER TABLE student ADD gpa DECIMAL(3,2);
 --------------------------------------------------------
+CREATE TABLE student2(
+    student_id INT PRIMARY KEY,
+    name VARCHAR(40),
+    major VARCHAR(25)
+);
+
+DESCRIBE student2;
+
+ALTER TABLE student2 ADD gpa DECIMAL(3,2);
+ALTER TABLE student2 ADD grade INT;
+ALTER TABLE student2 DROP COLUMN grade;
+
+--INSERTING DATA
+INSERT INTO student VALUES(1, 'DAYO', 'Biology')-- ' ' this must be used to insert string
+--grabbing info from student table
+SELECT * FROM student;
